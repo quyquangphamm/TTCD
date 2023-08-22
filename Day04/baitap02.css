@@ -1,0 +1,13 @@
+img{
+    width: 150px;
+    height: 150px;
+}
+nav ul {
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    display: flow-root; 
+    justify-self: unset;
+    background: #dc07b2;
+    height: 50px;
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+html,body{
+    font-size: 16px;
+}
+nav{
+
+}
+nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(52, 226, 4);
+}
