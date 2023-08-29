@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    color: #222;
+    font-family:'font-medium';
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    width: calc(12*100%/18);
+    margin: auto;
+    position: relative;
+}
+/* header  */
+header{
+    /* border-bottom: 1px solid #000; */
+}
+header nav{
+    display: flex;
+    align-items: center;
+    width: calc(12*100%/18);
+    margin: auto;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header nav .menu{
+    display: flex;
+    width: calc(7*100%/12);
+    justify-content: space-between;
+}
+
+header nav .menu .menu-item{
+    position: relative;
+    line-height: 2rem;
+}
+
+header nav .menu .menu-item:first-child:after{
+    content: "";
+    position: absolute;
+    left: 0;right: 0; bottom: 0;
+    background-color: #bd945f;
+    height: 0.3rem;
+    width: 60%;
+}
+
+header nav .menu .menu-item:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;right: 0; bottom: 0;
+    background-color: #bd945f;
+    height: 0.3rem;
+    width: 60%;
+}
+
+
+/* 1. banner */
+main .banner.container {
+    position: relative;
+}
+main .banner .introduction{
+    position: absolute;
+    top: 8rem; left:20rem; right: 0;
+    margin-top: 50px;
+    font-size: 3rem;
+   
+}
+main .banner .introduction p{
+    margin-top: 25px;
+    width: 410px;
+    font-size: 17px;
+}
+
+main .banner .button{
+    margin-top: 30px;
+    
+}
+
+button{
+    background-color: #fbcc8e;
+    font-size: 17px;
+}
+
+main .banner .introduction h1{
+    font-size: 40px;
+}
+
+
+/* product */
+
+#product {
+    background-color: #d8d8d8;
+
+}
+ 
+#product .category {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+#product .container .category .item{
+    width: 25%;
+    text-align: center;
+
+}
+
+#product .container{
+    top: -4rem;
+}
+
+#product .hot-product h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+   
+}
+
+.product .product-box{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 70px;
+ text-align: center;
+ padding: 10px;
+}
+
+.product .product-box .images img{
+    width: 100%;
+}
+
+.product .product-box .images{
+    padding: 5px;
+}
+
+.star .checked {
+    color: #ffc401;
+}
+
+.box .container{
+    width: 100%;
+   filter: brightness(30%);
+}
+
+/* about-us */
+main .about-us {
+    position: relative;
+  }
+  
+  main .about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Day06/images/ve-chung-toi/ve-chung-toi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    filter: brightness(20%);
+  }
+  
+  main .about-us .container {
+    position: relative;
+    width: calc(12 * 100% / 18);
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  main .about-us .container .title {
+    position: relative;
+    text-align: center;
+    font-family: "font-ultra";
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  main .about-us .container .title::after {
+    content: "";
+    position: absolute;
+    background-color: #bd945f;
+    left: 44%;
+    right: 44%;
+    height: 0.4rem;
+    bottom: -0.4rem;
+  }
+  
+  main .about-us .container p,
+  main .about-us .container h7 {
+    color: #fff;
+  }
+  
+  main .about-us .container .about {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  main .about-us .container .about .about-img {
+    width: 50%;
+    margin: 1rem 1rem 1rem 0;
+  }
+  
+  main .about-us .container .about .about-img img {
+    width: 100%;
+  }
+  
+  main .about-us .container .about .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1rem 0 1rem 1rem;
+  }
+  
+  main .about-us .container .about ul {
+    display: flex;
+    width: 100%;
+    align-items: end;
+  }
+  
+  main .about-us .container .about ul li {
+    width: 25%;
+    margin: 0.2rem;
+  }
+  
+  main .about-us .container .about ul li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .whychoose .whychoose-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  /* news */
+  main .news {
+    width: 100%s;
+  }
+  
+  main .news .container {
+    width: calc(12 * 100% / 18);
+    margin: auto;
+    padding: 4rem 0;
+  }
+  
+  main .news .container .title {
+    position: relative;
+    text-align: center;
+    font-family: "font-ultra";
+    font-size: 1.5rem;
+    color: #2c2e53;
+  }
+  
+  main .news .container .title::after {
+    content: "";
+    position: absolute;
+    background-color: #bd945f;
+    left: 44%;
+    right: 44%;
+    height: 0.4rem;
+    bottom: -0.4rem;
+  }
+  
+  main .news .container .box {
+    display: flex;
+    margin-top: 3rem;
+  }
+  
+  main .news .container .news-img {
+    width: 60%;
+    margin-right: 1rem;
+    position: relative;
+  }
+  
+  main .news .container .news-img .img-title {
+    background-color: #bd945f;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  main .news .container .news-img .img-title h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    font-family: "font-thin";
+  }
+  
+  main .news .container .news-img .img-title p {
+    font-size: 15px;
+  }
+  
+  main .news .container .news-img img {
+    width: 100%;
+  }
+  
+  main .news .container .news-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  main .news .container .news-content .news-item {
+    width: 100%;
+    height: 9rem;
+    display: flex;
+  }
+  
+  main .news .container .news-content .news-item .item-content {
+    padding-left: 1rem;
+  }
+  
+  main .news .container .news-content .news-item .item-content h4 {
+    color: #bd945f;
+    padding-bottom: 0.5rem;
+  }
+  
+  main .news .container .news-content .news-item .item-content p {
+    font-size: 15px;
+  }
+  
+  main .news .container .news-content .xem-them {
+    margin-bottom: 1.5rem;
+  }
+  
+  main .news .container .news-content .xem-them i,
+  main .news .container .news-content .xem-them h3 {
+    color: #bd945f;
+  }
+  
+  .partner {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  
+  .partner .partner-list {
+    display: flex;
+    width: calc(100% / 7);
+    margin-top: 2rem;
+  }
+  
+  .partner .partner-list img {
+    width: 100%;
+  }
+/* footer */
+footer{
+    margin-top: auto;
+    background-color: #363636;
+    padding: 2rem ;
+}
+
+footer .container{
+    display: flex;
+    width: calc(12*100%/18);
+    margin: auto;
+    justify-content: space-between;
+    padding: 1rem;
+    line-height: 1.7rem;
+}
+
+footer li, footer a, footer .title, footer i{
+    color: #fff;
+}
+
+footer li, 
+footer a{
+    font-family: 'font-thin';
+}
+
+/* pseudo element */
+footer .title{
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+footer .title::after{
+    content: "";
+    position: absolute;
+    left: 0;right: 0; bottom: 0;
+    background-color: #fff;
+    height: 0.2rem;
+    width: 5rem;
+}
+
+footer .contact ul li:first-child{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer .contact ul li div{
+    width: 3rem;
+    margin-right: 1rem;
+}
+footer .contact ul li div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer .contact ul li:last-child div{
+    width: 10rem;
+}
+
+
+
