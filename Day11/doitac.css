@@ -1,0 +1,43 @@
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+main{ 
+    background-color: #c5c5c5;
+    
+}
+
+.partner .container h1{
+    padding: 15px ;
+    text-align: center;
+
+}
+
+.partner .container{
+    background-size: cover;
+    width: calc(10*100% / 18);
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+
+}
+.partner .container .partner-box{
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+    margin: 30px;
+    align-items:center;
+
+}
+
+.content h2{
+    color:  #bd945f;    
+}
+
+.content p{
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: start;
+    font-size: 17px;
+    padding: 5px;
+}
